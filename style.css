@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif, Color, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+}
+
+.navigation a:last-child {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0;
+    width: 4rem;
+}
+
+nav.navigation {
+    line-height: 1.7;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    transition: 0.3s;
+    z-index: 9999;
+}
+
+nav.scrolled {
+    background: white;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+
+}
+
+.hide a:focus {
+    color: red;
+}
+
+.hide a:hover {
+    color: red;
+}
+
+.o li {
+    font-weight: 100;
+    width: 100%;
+    padding-left: 2rem;
+}
+
+#side {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: all 0.3s ease;
+
+}
+
+#side:focus {
+    outline: 2px solid (0, 0, 0, 0.55);
+}
+
+
+
+
+.items {
+    width: 7rem;
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    list-style: none;
+
+}
+
+.logo {
+    text-decoration: none;
+    width: 100%;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    font-weight: 900;
+    font-family: monospace;
+
+}
+
+nav.scrolled .logo {
+    color: black;
+}
+
+.items a {
+    display: flex;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.3s ease;
+}
+
+
+nav.scrolled .items a {
+    color: black;
+}
+
+.hide {
+    display: block;
+}
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 4rem;
+}
+
+.ico {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5rem;
+}
+
+.ico a {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+
+    background: rgba(255, 255, 255, 0.1);
+
+
+}
+
+.black,
+.white {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+.black:hover,
+.white:hover {
+    fill: rgba(255, 255, 255, 0.7);
+}
+
+/* Home section  */
+#home::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('img/bg.jpg') center center/cover no-repeat;
+    width: 100%;
+    height: 44.375rem;
+    top: -70px;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+
+}
+
+#home {
+    padding: 5rem;
+    padding-top: 8rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.in {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.in a {
+    text-decoration: none;
+    color: white;
+    background-color: #64a19d;
+    padding: 1.25rem 2rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 1rem 0rem;
+    display: inline-block;
+
+}
+
+footer {
+
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* utility classes */
+
+.big {
+    font-family: "Varela Round",
+        -apple-system,
+        "Segoe UI",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.small {
+    max-width: 45rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-transform: uppercase; */
+    color: rgb(255 255 255 / 50%);
+
+}
+
+
+/* For mobile  */
+
+@media screen and (max-width:1030px) {
+
+
+
+    nav {
+        background-color: white;
+    }
+
+
+    .items {
+        display: none;
+    }
+
+    .items a {
+        display: none;
+        color: rgba(0, 0, 0, 0.55);
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        display: block;
+        color: black;
+        font-weight: bold;
+    }
+
+    .logo a {
+        justify-content: flex-start;
+    }
+
+    .hide {
+        display: none;
+
+    }
+
+    .hide a:active {
+        color: red;
+
+    }
+
+    #side {
+        color: #64a19d;
+        text-decoration: none;
+        padding: 0.5rem;
+        width: fit-content;
+        height: 2.5rem;
+        display: flex;
+
+        margin-left: auto;
+        border-radius: 5px;
+        border: 1px solid #64a19d;
+        margin-top: 1rem;
+        margin-right: 3rem;
+    }
+
+
+
+    ul {
+        font-weight: bold;
+
+        margin-top: 2px;
+        gap: 0;
+        background-color: white;
+        position: absolute;
+        top: 58px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+
+    .small {
+        max-width: 20rem;
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8rem;
+    }
+
+
+    /* utility class  */
+
+    .big {
+        font-size: 5.25rem;
+    }
+}
+
+
+
+/* for mobile/tabs */
+@media screen and ((min-width:200px) and (max-width:724px)) {
+    .big {
+        font-size: 2.25rem;
+    }
+
+}
