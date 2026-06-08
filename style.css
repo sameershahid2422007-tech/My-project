@@ -6,9 +6,8 @@
 
 body,
 html {
-    font-family: sans-serif;
+    font-family: "Nunito", sans-serif;
     scroll-behavior: smooth;
-    font-family: Helvetica, Arial, sans-serif, Color, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 
 }
 
@@ -23,6 +22,7 @@ html {
 nav.navigation {
     line-height: 1.7;
     display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     background: transparent;
@@ -114,6 +114,22 @@ nav.scrolled .items a {
 
 
 
+#About {
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+    padding-top: 10rem;
+}
+
+.whi {
+    color: white;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    padding-top: 10rem;
+    text-align: center;
+
+}
+
+
+
 
 
 footer {
@@ -195,8 +211,34 @@ footer {
 
 }
 
-footer {
+/* project-section */
 
+#project{
+    padding: 8rem;
+}
+
+.pro{
+    display: flex;
+    grid-gap: 2rem;
+    flex-direction: row;
+}
+.pro-in{
+    text-align: center;
+}
+
+.pro-h{
+    margin-bottom: 1rem;
+}
+
+.pro-in p{
+    font-size: 1.2rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+}
+
+footer {
+    
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -214,11 +256,11 @@ footer p {
 
 .big {
     font-family: "Varela Round",
-        -apple-system,
-        "Segoe UI",
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
+    -apple-system,
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
     font-size: 6.25rem;
     text-transform: uppercase;
     letter-spacing: 0.8rem;
@@ -235,54 +277,77 @@ footer p {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* text-transform: uppercase; */
     color: rgb(255 255 255 / 50%);
+    
+}
 
+/* about p  */
+
+.whi {
+    font-weight: 100;
+    letter-spacing: 0.111rem;
+    padding: 5rem 17rem;
+}
+
+.per {
+    line-height: 1.5rem;
+    color: grey;
+    font-weight: 400;
+    
+}
+
+.by {
+    margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 
+/* project */
+.pro-in h4{
+    font-size: 2.25rem;
+}
 /* For mobile  */
 
 @media screen and (max-width:1030px) {
-
-
-
+    
+    
+    
     nav {
         background-color: white;
     }
-
-
+    
+    
     .items {
         display: none;
     }
-
+    
     .items a {
         display: none;
         color: rgba(0, 0, 0, 0.55);
     }
-
+    
     .logo {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-left: 1rem;
         display: block;
         color: black;
         font-weight: bold;
     }
-
+    
     .logo a {
         justify-content: flex-start;
     }
-
+    
     .hide {
         display: none;
-
+        
     }
-
+    
     .hide a:active {
         color: red;
-
+        
     }
-
+    
     #side {
         color: #64a19d;
         text-decoration: none;
@@ -290,16 +355,14 @@ footer p {
         width: fit-content;
         height: 2.5rem;
         display: flex;
-
         margin-left: auto;
-        border-radius: 5px;
         border: 1px solid #64a19d;
-        margin-top: 1rem;
+        border-radius: 5px;
         margin-right: 3rem;
     }
-
-
-
+    
+    
+    
     ul {
         font-weight: bold;
 
@@ -314,9 +377,9 @@ footer p {
         justify-content: center;
         align-items: flex-start;
     }
-
-
-
+    
+    
+    
     .small {
         max-width: 20rem;
         font-weight: 500;
@@ -324,14 +387,42 @@ footer p {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.8rem;
     }
-
-
-    /* utility class  */
-
-    .big {
-        font-size: 5.25rem;
+    
+    
+    /* project class  */
+    .pro{
+        display: flex;
+        flex-direction: column;
     }
+    
+    #project{
+        padding: 2rem;
+        padding-top: 8rem;
+    }
+    /* utility class  */
+    
+    .big {
+        font-size: 2.25rem;    }
+        
+        .by {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        letter-spacing: 0.111rem;
+    }
+
+    .per {
+        font-size: 0.9rem;
+    }
+
+    .whi{
+            padding: 2rem;
+    padding-top: 10rem;
+    }
+    .pro-in p{
+    font-size: 1.2rem;}
 }
+
 
 
 
@@ -340,5 +431,6 @@ footer p {
     .big {
         font-size: 2.25rem;
     }
+
 
 }
