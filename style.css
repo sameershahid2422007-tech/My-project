@@ -8,8 +8,8 @@ body,
 html {
     font-family: "Nunito", sans-serif;
     scroll-behavior: smooth;
-        letter-spacing: 0.0625em;
-        padding: 0;
+    letter-spacing: 0.0625em;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 
@@ -19,8 +19,8 @@ html {
 .navigation a:last-child {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    padding: 0;
+    font-weight: 700;
+    padding: 0rem 3.30rem;
     width: 4rem;
 }
 
@@ -44,6 +44,7 @@ ul {
     width: 100%;
     list-style: none;
     align-items: center;
+    margin-left: 10rem;
 
 }
 
@@ -55,9 +56,9 @@ ul {
     color: white;
 }
 
+
 .o li {
-   font-weight: 100;
-    padding-left: 7rem;;
+    font-weight: 100;
 }
 
 #side {
@@ -94,7 +95,7 @@ ul {
     margin-right: 2rem;
     font-weight: 900;
     font-family: monospace;
-    
+
 }
 
 nav.scrolled .logo {
@@ -289,9 +290,10 @@ nav.scrolled .items a {
     z-index: -1;
 }
 
-.ach{
+.ach {
     margin-bottom: 4rem;
 }
+
 .former {
     display: flex;
     gap: 1rem;
@@ -307,31 +309,33 @@ nav.scrolled .items a {
     height: auto;
     font-weight: 400;
     cursor: pointer;
-        
+
 
 
 }
 
 .former input {
     color: grey;
-width: 25rem;
+    width: 25rem;
     padding: 1.25rem 2rem;
     text-align: left;
-    
+
 
 }
+
 .former input:focus {
     outline: none;
-    
+
 }
+
 .former input::placeholder {
     letter-spacing: 2px;
 }
-  
+
 .former button:focus {
     background-color: rgba(100, 161, 157, 0.7);
-    
-    
+
+
 }
 
 
@@ -343,34 +347,38 @@ width: 25rem;
     width: auto;
 }
 
-#contact{
+#contact {
     background-color: black;
     padding: 10rem 5rem;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
-.con{
-        border-radius: 12px;
+
+.con {
+    border-radius: 12px;
     padding: 2rem;
     text-align: center;
     background-color: white;
     border-bottom: 10px solid #64a19d;
     width: 100%;
 }
-.two{
+
+.two {
     margin: 1rem 0;
     font-weight: 300;
 }
-.p{
+
+.p {
     color: grey;
 }
-hr{
-    background-color: #64a19d; 
+
+hr {
+    background-color: #64a19d;
     margin: 1.25rem auto;
     width: 3rem;
     height: 4px;
@@ -449,13 +457,21 @@ footer p {
 /* For mobile  */
 
 @media screen and (max-width:1030px) {
-    
-    
-    
+
+
+
+    .navigation a:last-child {
+        padding: 0;
+    }
+
     .navigation {
         background-color: white !important;
     }
-    
+
+    ul {
+        margin-left: 0;
+    }
+
     .o li {
         font-weight: 100;
         width: 100%;
@@ -477,8 +493,8 @@ footer p {
         color: black;
         font-weight: bold;
         padding-left: 1rem;
-                line-height: 2.3;
-        font-size: 1.3rem;
+        line-height: 2.3;
+        font-size: 1.1rem;
     }
 
     .logo a {
@@ -499,14 +515,14 @@ footer p {
         color: #64a19d;
         text-decoration: none;
         padding: 1.5rem 0.5rem;
-                width: fit-content;
+        width: fit-content;
         height: 2.5rem;
         display: flex;
         margin-left: auto;
         border: 1px solid #64a19d;
         border-radius: 8px;
         margin-right: 2rem;
-                margin-bottom: 1rem;
+        margin-bottom: 0.3rem;
     }
 
 
@@ -558,49 +574,50 @@ footer p {
     }
 
 
-#project {
-    padding: 8rem 2rem;
-}
+    #project {
+        padding: 8rem 2rem;
+    }
 
-/* utility class  */
+    /* utility class  */
 
-.big {
-    font-size: 2.25rem;
-}
+    .big {
+        font-size: 2.25rem;
+    }
 
-.by {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.111rem;
-}
+    .by {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.111rem;
+    }
 
-.per {
-    font-size: 0.9rem;
-}
+    .per {
+        font-size: 0.9rem;
+    }
 
-.whi {
-    padding: 2rem;
-    padding-top: 10rem;
-}
+    .whi {
+        padding: 2rem;
+        padding-top: 10rem;
+    }
 
-.pro-in p {
-    font-size: 1.2rem;
-}
+    .pro-in p {
+        font-size: 1.2rem;
+    }
 
-.former input{
-    width: 100%;
-    text-align: center;
-}
+    .former input {
+        width: 100%;
+        text-align: center;
+    }
 
 
-#contact{
-    padding: 5rem 2rem;
-}
-.container{
-    flex-direction: column;
-    gap: 2rem;
-}
+    #contact {
+        padding: 5rem 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
 
 }
 

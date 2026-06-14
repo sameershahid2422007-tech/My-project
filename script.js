@@ -24,6 +24,25 @@ window.addEventListener("scroll", () => {
 
             }
         }
+        function closer() {
+
+            if (window.innerWidth <= 1097) {
+                let items = document.querySelectorAll('.double');
+
+                items.forEach(function (items) {
+
+                    if (items.style.display === 'flex') {
+                        items.style.display = 'none';
+                    }
+
+                    else {
+                        items.style.display = 'flex';
+                    }
+
+                });
+
+            }
+        }
 
 
         // for placeholder
