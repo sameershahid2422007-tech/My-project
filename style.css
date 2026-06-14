@@ -8,8 +8,13 @@ body,
 html {
     font-family: "Nunito", sans-serif;
     scroll-behavior: smooth;
+        letter-spacing: 0.0625em;
+        padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 
 }
+
 
 .navigation a:last-child {
     display: flex;
@@ -25,7 +30,7 @@ nav.navigation {
     align-items: center;
     position: sticky;
     top: 0;
-    background: transparent;
+    background-color: transparent;
     transition: 0.3s;
     z-index: 9999;
 }
@@ -43,17 +48,16 @@ ul {
 }
 
 .hide a:focus {
-    color: red;
+    color: white;
 }
 
 .hide a:hover {
-    color: red;
+    color: white;
 }
 
 .o li {
-    font-weight: 100;
-    width: 100%;
-    padding-left: 2rem;
+   font-weight: 100;
+    padding-left: 7rem;;
 }
 
 #side {
@@ -83,13 +87,14 @@ ul {
     text-decoration: none;
     width: 100%;
     padding: 1rem;
+    padding-left: 5rem;
     color: rgba(255, 255, 255, 0.5);
     transition: color 0.3s ease;
     font-size: 1.4rem;
     margin-right: 2rem;
     font-weight: 900;
     font-family: monospace;
-
+    
 }
 
 nav.scrolled .logo {
@@ -132,14 +137,7 @@ nav.scrolled .items a {
 
 
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-    padding: 4rem;
-}
+
 
 .ico {
     display: flex;
@@ -175,7 +173,7 @@ footer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('img/bg.jpg') center center/cover no-repeat;
     width: 100%;
     height: 44.375rem;
-    top: -70px;
+    top: -80px;
     left: 0;
     z-index: -1;
     pointer-events: none;
@@ -213,38 +211,179 @@ footer {
 
 /* project-section */
 
-#project{
+#project {
     padding: 8rem;
+    padding-right: 7rem;
+    background-color: rgb(248 249 250);
 }
 
-.pro{
+.pro {
     display: flex;
-    grid-gap: 2rem;
+    grid-gap: 0rem;
     flex-direction: row;
 }
-.pro-in{
+
+
+.pro-in {
     text-align: center;
+    width: 40rem;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
 }
 
-.pro-h{
+.fire img {
+    vertical-align: middle;
+    width: 50vw;
+    height: 25rem;
+}
+
+.poo {
+    flex-direction: row-reverse;
+}
+
+.mongo {
+    margin-top: 6rem;
+}
+
+.text {
+    padding: 3rem;
+    background-color: black;
+    border: 2px solid;
+    width: 38.5625rem;
+}
+
+.pro-h {
     margin-bottom: 1rem;
 }
 
-.pro-in p{
+.pro-in p {
     font-size: 1.2rem;
-    font-size: 1.7rem;
     font-weight: 300;
     line-height: 1.9rem;
 }
 
-footer {
+
+/* Sign-Up section  */
+
+#sign-up {
+    position: relative;
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+#sign-up::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url('img/signup.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.ach{
+    margin-bottom: 4rem;
+}
+.former {
+    display: flex;
+    gap: 1rem;
+}
+
+.former input,
+.former button {
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    font-size: 80%;
+    border-radius: 5px;
+    border: 0;
+    height: auto;
+    font-weight: 400;
+    cursor: pointer;
+        
+
+
+}
+
+.former input {
+    color: grey;
+width: 25rem;
+    padding: 1.25rem 2rem;
+    text-align: left;
     
+
+}
+.former input:focus {
+    outline: none;
+    
+}
+.former input::placeholder {
+    letter-spacing: 2px;
+}
+  
+.former button:focus {
+    background-color: rgba(100, 161, 157, 0.7);
+    
+    
+}
+
+
+
+.former button {
+    color: white;
+    background-color: #64a19d;
+    flex: 0 0 10rem;
+    width: auto;
+}
+
+#contact{
+    background-color: black;
+    padding: 10rem 5rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.con{
+        border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    border-bottom: 10px solid #64a19d;
+    width: 100%;
+}
+.two{
+    margin: 1rem 0;
+    font-weight: 300;
+}
+.p{
+    color: grey;
+}
+hr{
+    background-color: #64a19d; 
+    margin: 1.25rem auto;
+    width: 3rem;
+    height: 4px;
+}
+
+footer {
+
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6rem;
+    padding: 5rem;
 }
 
 footer p {
@@ -256,11 +395,11 @@ footer p {
 
 .big {
     font-family: "Varela Round",
-    -apple-system,
-    "Segoe UI",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+        -apple-system,
+        "Segoe UI",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
     font-size: 6.25rem;
     text-transform: uppercase;
     letter-spacing: 0.8rem;
@@ -278,7 +417,7 @@ footer p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: rgb(255 255 255 / 50%);
-    
+
 }
 
 /* about p  */
@@ -293,7 +432,7 @@ footer p {
     line-height: 1.5rem;
     color: grey;
     font-weight: 400;
-    
+
 }
 
 .by {
@@ -303,66 +442,75 @@ footer p {
 
 
 /* project */
-.pro-in h4{
+.pro-in h4 {
     font-size: 2.25rem;
 }
+
 /* For mobile  */
 
 @media screen and (max-width:1030px) {
     
     
     
-    nav {
-        background-color: white;
+    .navigation {
+        background-color: white !important;
     }
     
-    
+    .o li {
+        font-weight: 100;
+        width: 100%;
+        padding-left: 2rem;
+    }
+
     .items {
         display: none;
     }
-    
+
     .items a {
         display: none;
         color: rgba(0, 0, 0, 0.55);
     }
-    
+
     .logo {
-        font-size: 1rem;
         margin-left: 1rem;
         display: block;
         color: black;
         font-weight: bold;
+        padding-left: 1rem;
+                line-height: 2.3;
+        font-size: 1.3rem;
     }
-    
+
     .logo a {
         justify-content: flex-start;
     }
-    
+
     .hide {
         display: none;
-        
+
     }
-    
+
     .hide a:active {
         color: red;
-        
+
     }
-    
+
     #side {
         color: #64a19d;
         text-decoration: none;
-        padding: 0.5rem;
-        width: fit-content;
+        padding: 1.5rem 0.5rem;
+                width: fit-content;
         height: 2.5rem;
         display: flex;
         margin-left: auto;
         border: 1px solid #64a19d;
-        border-radius: 5px;
-        margin-right: 3rem;
+        border-radius: 8px;
+        margin-right: 2rem;
+                margin-bottom: 1rem;
     }
-    
-    
-    
+
+
+
     ul {
         font-weight: bold;
 
@@ -377,9 +525,9 @@ footer p {
         justify-content: center;
         align-items: flex-start;
     }
-    
-    
-    
+
+
+
     .small {
         max-width: 20rem;
         font-weight: 500;
@@ -387,43 +535,74 @@ footer p {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.8rem;
     }
-    
-    
+
+
     /* project class  */
-    .pro{
+    .pro {
         display: flex;
         flex-direction: column;
-    }
-    
-    #project{
-        padding: 2rem;
-        padding-top: 8rem;
-    }
-    /* utility class  */
-    
-    .big {
-        font-size: 2.25rem;    }
-        
-        .by {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            font-weight: 500;
-        letter-spacing: 0.111rem;
+        gap: 0;
+        margin-top: 3rem;
+
     }
 
-    .per {
-        font-size: 0.9rem;
+    .pro-in {
+        width: 100%;
+        max-width: fit-content;
     }
 
-    .whi{
-            padding: 2rem;
+    .pro-in img {
+        max-width: 100%;
+        height: auto;
+        width: 95vw;
+    }
+
+
+#project {
+    padding: 8rem 2rem;
+}
+
+/* utility class  */
+
+.big {
+    font-size: 2.25rem;
+}
+
+.by {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.111rem;
+}
+
+.per {
+    font-size: 0.9rem;
+}
+
+.whi {
+    padding: 2rem;
     padding-top: 10rem;
-    }
-    .pro-in p{
-    font-size: 1.2rem;}
+}
+
+.pro-in p {
+    font-size: 1.2rem;
+}
+
+.former input{
+    width: 100%;
+    text-align: center;
 }
 
 
+#contact{
+    padding: 5rem 2rem;
+}
+.container{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+}
 
 
 /* for mobile/tabs */

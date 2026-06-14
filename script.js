@@ -26,6 +26,28 @@ window.addEventListener("scroll", () => {
         }
 
 
+        // for placeholder
+
+document.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("email");
+
+    function updatePlaceholder() {
+        if (!input) return;
+        
+        if (window.innerWidth <= 1030) {
+            input.placeholder = "ENTER";
+        } else {
+            input.placeholder = "ENTER EMAIL ADDRESS...";
+        }
+    }
+
+    // Run once on load
+    updatePlaceholder();
+
+    // Listen for window resizing
+    window.addEventListener("resize", updatePlaceholder);
+});
+
 
 
 
